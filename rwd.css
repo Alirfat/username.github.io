@@ -1,0 +1,159 @@
+html {
+  font-size: 10px;
+}
+
+li {
+  font-size: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: beige;
+  align-items: center;
+}
+
+header h1 {
+  border: 1px dotted black;
+  width: 25vw;
+  text-align: center;
+  font-size: 4rem;
+}
+
+header nav {
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  border: 1px dotted black;
+  width: 41.66vw;
+  justify-content: space-between;
+}
+
+header li {
+  padding: 10px;
+  border: 1px dotted black;
+  text-align: center;
+}
+
+header .img {
+  width: 16.66vw;
+
+  border: 1px dotted black;
+  margin: 10px 0px;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+main div {
+  width: 24vw;
+  height: 25vw;
+  border: 1px dotted black;
+}
+
+main {
+  display: flex;
+  background-color: burlywood;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75vw;
+}
+
+aside {
+  width: 25vw;
+  border: 1px dotted black;
+  background-color: cadetblue;
+}
+
+@media screen and (max-width: 800px) {
+  header ul {
+    flex-direction: column;
+    border: 1px dotted black;
+    width: 33.33vw;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 66.66vw;
+  }
+  aside {
+    width: 33.33vw;
+  }
+  main div {
+    width: 33.33vw;
+    height: 33.33vw;
+  }
+  body {
+    font-size: 25px;
+  }
+
+  header .img {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header nav {
+    order: 3;
+    width: 100vw;
+  }
+  header ul {
+    flex-direction: row;
+    width: 100vw;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+  header h1 {
+    width: 33.33vw;
+  }
+  main div {
+    width: 66.66vw;
+    height: 66.66vw;
+  }
+  header img {
+    width: 33.33vw;
+    border-radius: 16.66vw;
+    border: 1px dotted black;
+    margin: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main div {
+    width: 100vw;
+    height: 100vw;
+  }
+  header ul {
+    flex-direction: column;
+  }
+  header h1 {
+    width: 58.33vw;
+  }
+  section {
+    width: 100vw;
+  }
+  main {
+    flex-direction: column;
+  }
+  aside {
+    height: 200px;
+    width: 100vw;
+    order: 2;
+  }
+}
